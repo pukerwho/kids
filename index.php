@@ -22,14 +22,14 @@
 					<img src="<?php bloginfo('template_url') ?>/img/logo-babochka-right.png" alt="">
 				</div>
 			</div>
-			<div class="welcome_content text-xl text-center">
+			<div class="welcome_content kids-animate text-xl text-center">
 				Подаруйте своїй дитині свято, яке вона запам’ятає назавжди! Запросіть на дитячий день народження улюбленого героя малюка. Хто це буде – Русалонька, Трансформери чи Гаррі Поттер? Для нашої команди аніматорів немає нічого неможливого, тож обирайте тематику свята, а все решта ми зробимо самі!
 			</div>	
 		</div>
 	</div>
 	<div class="services mb-20">
 		<div class="text-center text-6xl">
-			<div class="rotonda_font color-bblack underline_01">
+			<div class="titleshow kids-animate rotonda_font color-bblack underline_01">
 				Наші послуги	
 			</div>
 		</div>
@@ -39,14 +39,14 @@
 			<img src="<?php bloginfo('template_url') ?>/img/animators.png" alt="" class="w-full mx-auto">
 		</div>
 		<div class="w-1/2 pl-10">
-			<div class="text-4xl rotonda_font color-bblack mb-4">
+			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
 				Aніматори
 			</div>
-			<div class="text-xl mb-4">
+			<div class="text kids-animate text-xl mb-4">
 				Професійні аніматори – невід’ємна частина веселого та запального дитячого свята. Щоб вечірка пройшла вдало, батькам треба лише розповісти нам про хобі та вподобання своєї дитини, все інше ми зробимо за вас. Якісні костюми улюблених героїв, веселі конкурси, насичена програма та чудовий настрій гарантовано!
 			</div>
 			<div class="text-xl text-right">
-				<div class="underline_02 text-4xl hand_font">
+				<div class="underline_02 kids-animate text-4xl hand_font">
 					<a href="#" class="color-bblack">
 						Подробиці	
 					</a>
@@ -56,14 +56,14 @@
 	</div>
 	<div class="showprogram flex items-center mb-4">
 		<div class="w-1/2">
-			<div class="text-4xl rotonda_font color-bblack mb-4">
+			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
 				Шоу-програми
 			</div>
-			<div class="text-xl mb-4">
+			<div class="text kids-animate text-xl mb-4">
 				Професійні аніматори – невід’ємна частина веселого та запального дитячого свята. Щоб вечірка пройшла вдало, батькам треба лише розповісти нам про хобі та вподобання своєї дитини, все інше ми зробимо за вас. Якісні костюми улюблених героїв, веселі конкурси, насичена програма та чудовий настрій гарантовано!
 			</div>
 			<div class="text-xl">
-				<div class="underline_02 text-4xl hand_font">
+				<div class="underline_02 kids-animate text-4xl hand_font">
 					<a href="#" class="color-bblack">
 						Подробиці	
 					</a>
