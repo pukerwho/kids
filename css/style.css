@@ -42290,6 +42290,11 @@ input {
   border: 1px solid #cccccc;
   padding: 1rem; }
 
+[type="submit"] {
+  width: auto;
+  color: #ffffff;
+  background-color: #58b38b; }
+
 form p {
   margin-bottom: 1rem; }
 
