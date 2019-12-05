@@ -5,8 +5,8 @@
 </div>
 
 <div class="container mx-auto">
-	<h1 class="hand_font text-6xl text-center mb-8">
-		<?php single_term_title(); ?>	
+	<h1 class="relative hand_font text-6xl text-center mb-8">
+		<?php single_term_title(); ?>
 	</h1>
 	<?php $current_term = get_queried_object_id(); ?>
 	<?php 

@@ -2,6 +2,7 @@
     <footer id="footer" class="footer mb-4">
     	<div class="container mx-auto">
     		<div class="flex flex-col items-center justify-center">
+                <?php if( !is_page_template( 'tpl_contact.php' )): ?>
     			<div class="text-4xl rotonda_font color-bblack">
 	    			Зв'яжіться з нами
 	    		</div>
@@ -14,6 +15,7 @@
 	    		<div class="text-2xl mb-12">
 	    			<a href="www.luevent.com.ua">www.luevent.com.ua</a>
 	    		</div>
+                <?php endif; ?>
 	    		<div>
 	    			Розроблено <a href="https://timeto.top/">TimeToTop</a>
 	    		</div>
