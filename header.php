@@ -23,7 +23,7 @@
   <header id="header" class="header" role="banner">
     <div class="container mx-auto">
       <div class="header_content flex justify-between py-4">
-        <div class="header_logo">
+        <div class="header_order cursor-pointer">
           <div class="underline_03">
             Замовити он-лайн  
           </div>

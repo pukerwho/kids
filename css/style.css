@@ -42282,6 +42282,17 @@ h2 {
 a {
   color: #444444; }
 
+input {
+  width: 100%;
+  background-color: #ffffff;
+  -webkit-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #cccccc;
+  padding: 1rem; }
+
+form p {
+  margin-bottom: 1rem; }
+
 #content {
   overflow: hidden;
   padding-top: 4rem; }
@@ -42348,6 +42359,73 @@ a {
     background-position: center;
     z-index: -1;
     margin: auto; }
+
+.modal {
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-75%);
+  -ms-transform: translateY(-75%);
+  transform: translateY(-75%);
+  opacity: 0;
+  z-index: -999; }
+  .modal.modal_open {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    opacity: 1;
+    z-index: 9;
+    -webkit-transition: opacity 0.75s, -webkit-transform 0.75s;
+    transition: opacity 0.75s, -webkit-transform 0.75s;
+    -o-transition: opacity 0.75s, transform 0.75s;
+    transition: opacity 0.75s, transform 0.75s;
+    transition: opacity 0.75s, transform 0.75s, -webkit-transform 0.75s; }
+  .modal_content {
+    position: relative; }
+    .modal_content:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: url("../img/colors-top.jpg") no-repeat;
+      background-size: contain;
+      background-position: top;
+      -webkit-border-top-right-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      -webkit-border-top-left-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+      z-index: 0; }
+  .modal_close {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    z-index: 3;
+    cursor: pointer; }
+  .modal_bg {
+    opacity: 0; }
+    .modal_bg_open {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.27);
+      z-index: 3;
+      opacity: 1;
+      -webkit-transition: all 0.75s;
+      -o-transition: all 0.75s;
+      transition: all 0.75s; }
 
 .header {
   width: 100%;
@@ -42582,7 +42660,7 @@ a {
 
 .color-01 {
   right: 10%;
-  top: 20%; }
+  top: 35%; }
 
 .color-02 {
   left: -2%;
@@ -42617,6 +42695,18 @@ a {
 .color-09 {
   right: 5%;
   bottom: 20%; }
+
+.color-10 {
+  left: 0;
+  top: 50%; }
+
+.color-11 {
+  right: 0;
+  top: 65%; }
+
+.color-12 {
+  left: 0;
+  top: 40%; }
 
 .welcome_content.kids-animate {
   opacity: 0;

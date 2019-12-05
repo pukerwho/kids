@@ -9,3 +9,13 @@ $(window).scroll(function(){
     }
   }
 })
+
+$('.header_order').on('click', function(){
+	$('.modal_order').addClass('modal_open');
+	$('.modal_bg').addClass('modal_bg_open');
+});
+
+$('.modal_close').on('click', function(){
+	$('.modal').removeClass('modal_open');
+	$('.modal_bg').removeClass('modal_bg_open');
+});
