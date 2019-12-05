@@ -31,4 +31,19 @@ $('#lightSlider').lightSlider({
   loop: true,
   slideMargin: 0,
   thumbItem: 9,
-})
+  onAfterSlide: function (el) {
+    SliderPost();
+  },
+});
+
+function SliderPost() {
+  sliderActiveImgHeight = document.querySelector('.lslide.active img').naturalHeight;
+  sliderActiveImgWidth = document.querySelector('.lslide.active img').naturalWidth;
+  siderActiveWidth = $('.lslide.active').width();
+
+  sliderNewKoef = sliderActiveImgWidth/siderActiveWidth;
+  sliderNewHeight = sliderActiveImgHeight/sliderNewKoef;
+  $('#lightSlider').css({'height':sliderNewHeight+'px'})
+}
+
+SliderPost();

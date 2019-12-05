@@ -42616,9 +42616,9 @@ form p {
   overflow: hidden;
   padding-top: 4rem; }
 
-#lightslider .lSSlideOuter .lSPager.lSGallery li {
+.lSSlideOuter .lSPager.lSGallery li {
   height: 60px; }
-  #lightslider .lSSlideOuter .lSPager.lSGallery li img {
+  .lSSlideOuter .lSPager.lSGallery li img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
