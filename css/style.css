@@ -42887,6 +42887,23 @@ form p {
   -webkit-animation-timing-function: linear;
   animation-timing-function: linear; }
 
+.post_content p {
+  margin-bottom: 1rem; }
+.post_content li {
+  position: relative;
+  padding-left: 30px; }
+  .post_content li:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url("../img/li.png"); }
+
 .category_post:nth-child(2n) {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;

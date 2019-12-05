@@ -40,8 +40,8 @@
 					<div class="post_title text-4xl rotonda_font color-bblack mb-4">
 						<?php the_title(); ?>	
 					</div>
-					<div>
-						<?php the_content(); ?>
+					<div class="post_content">
+						<?php echo carbon_get_the_post_meta('crb_post_description') ?>	
 					</div>
 					<div class="text-xl">
 						<div class="underline_02 kids-animate text-4xl hand_font">

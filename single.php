@@ -42,7 +42,7 @@
 			<h1 class="post_title text-4xl rotonda_font color-bblack mb-4">
 				<?php the_title(); ?>		
 			</h1>
-			<div class="mb-4">
+			<div class="post_content mb-4">
 				<?php the_content(); ?>
 			</div>
 			<div>
