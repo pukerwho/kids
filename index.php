@@ -146,14 +146,7 @@
 			<img src="<?php bloginfo('template_url') ?>/img/quote.png" alt="" class="w-2/3 mx-auto">
 		</div>
 	</div>
-	<div class="instagram mb-8">
-		<div class="text-4xl rotonda_font color-bblack text-center mb-4">
-			Наш Instagram
-		</div>
-		<div>
-			<?php echo do_shortcode('[instagram-feed num=12]') ?>
-		</div>
-	</div>
+	<?php get_template_part('blocks/instagram') ?>
 </div>
 
 <?php get_footer(); ?>

@@ -19,3 +19,16 @@ $('.modal_close').on('click', function(){
 	$('.modal').removeClass('modal_open');
 	$('.modal_bg').removeClass('modal_bg_open');
 });
+
+$('.order_now').on('click', function(){
+  $('.modal_order_now').addClass('modal_open');
+  $('.modal_bg').addClass('modal_bg_open');
+});
+
+$('#lightSlider').lightSlider({
+  gallery: true,
+  item: 1,
+  loop: true,
+  slideMargin: 0,
+  thumbItem: 9,
+})

@@ -34,6 +34,19 @@
     		</div>
     	</div>
     </div>
+    <div class="modal modal_order_now">
+        <div class="modal_content w-1/2 bg-white shadow-lg rounded-lg py-12 px-8">          
+            <div class="modal_close">
+                <img src="<?php bloginfo('template_url') ?>/img/close.svg" alt="" width="20px">
+            </div>
+            <div class="modal_title rotonda_font text-4xl text-center relative mb-4">
+                Замовити свято
+            </div>
+            <div class="modal_text relative">
+                <?php echo do_shortcode('[contact-form-7 id="5" title="Contact form 1"]') ?>
+            </div>
+        </div>
+    </div>
     <div class="modal_bg"></div>
     <?php wp_footer(); ?>
 </body>
