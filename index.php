@@ -6,7 +6,7 @@
 
 <div class="container mx-auto">
 	<div class="welcome mb-8">
-		<div class="w-2/3 flex items-center flex-col mx-auto">
+		<div class="w-full md:w-2/3 flex items-center flex-col mx-auto">
 			<div class="logo relative mb-4">
 				<img src="<?php bloginfo('template_url') ?>/img/logo.png" alt="">
 				<div class="logo_heart_left">
@@ -37,11 +37,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="animators flex items-center mb-4">
-		<div class="w-1/2">
+	<div class="animators flex items-center flex-col md:flex-row mb-4 px-6 md:px-0">
+		<div class="w-full md:w-1/2">
 			<img src="<?php bloginfo('template_url') ?>/img/animators.png" alt="" class="w-full mx-auto">
 		</div>
-		<div class="w-1/2 pl-10">
+		<div class="w-full md:w-1/2 pl-0 md:pl-10">
 			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
 				Aніматори
 			</div>
@@ -57,8 +57,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="showprogram flex items-center mb-4">
-		<div class="w-1/2">
+	<div class="showprogram flex items-center flex-col-reverse md:flex-row mb-4 px-6 md:px-0">
+		<div class="w-full md:w-1/2">
 			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
 				Шоу-програми
 			</div>
@@ -73,15 +73,15 @@
 				</div>
 			</div>
 		</div>
-		<div class="w-1/2 pl-10">
+		<div class="w-full md:w-1/2 pl-0 md:pl-10">
 			<img src="<?php bloginfo('template_url') ?>/img/disco.png" alt="" class="disco w-full mx-auto">
 		</div>
 	</div>
-	<div class="quest flex items-center mb-4">
-		<div class="w-1/2">
+	<div class="quest flex items-center flex-col md:flex-row mb-4 px-6 md:px-0">
+		<div class="w-full md:w-1/2">
 			<img src="<?php bloginfo('template_url') ?>/img/harry-potter.png" alt="" class="w-full mx-auto">
 		</div>
-		<div class="w-1/2 pl-10">
+		<div class="w-full md:w-1/2 pl-0 md:pl-10">
 			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
 				Квести
 			</div>
@@ -97,8 +97,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="newyear flex items-center mb-4">
-		<div class="w-1/2">
+	<div class="newyear flex items-center flex-col-reverse md:flex-row mb-4 px-6 md:px-0">
+		<div class="w-full md:w-1/2">
 			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
 				Новорічні пропозиції
 			</div>
@@ -113,15 +113,15 @@
 				</div>
 			</div>
 		</div>
-		<div class="w-1/2 pl-10">
+		<div class="w-full md:w-1/2 pl-0 md:pl-10">
 			<img src="<?php bloginfo('template_url') ?>/img/newyear.png" alt="" class="w-full mx-auto">
 		</div>
 	</div>
-	<div class="vipiska flex items-center mb-4">
-		<div class="w-1/2">
+	<div class="vipiska flex items-center flex-col md:flex-row mb-4 px-6 md:px-0">
+		<div class="w-full md:w-1/2">
 			<img src="<?php bloginfo('template_url') ?>/img/vipiska.png" alt="" class="w-full mx-auto">
 		</div>
-		<div class="w-1/2 pl-10">
+		<div class="w-full md:w-1/2 pl-0 md:pl-10">
 			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
 				Виписка з пологового будинку
 			</div>
@@ -137,13 +137,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="quote flex items-center mb-12">
-		<div class="w-1/2 hand_font text-5xl">
+	<div class="quote flex items-center flex-col-reverse md:flex-row mb-12 px-6 md:px-0">
+		<div class="w-full md:w-1/2 hand_font text-5xl">
 			<div class="mb-4">"Одна з найбільших удач у житті людини – щасливе дитинство."</div>
 			<div class="text-right text-3xl">Агата Крісті</div>
 		</div>
-		<div class="w-1/2">
-			<img src="<?php bloginfo('template_url') ?>/img/quote.png" alt="" class="w-2/3 mx-auto">
+		<div class="w-full md:w-1/2">
+			<img src="<?php bloginfo('template_url') ?>/img/quote.png" alt="" class="w-full md:w-2/3 mx-auto">
 		</div>
 	</div>
 	<?php get_template_part('blocks/instagram') ?>

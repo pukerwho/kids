@@ -21,14 +21,14 @@
 <body <?php echo body_class(); ?>>
   <!-- <div class="preloader"></div> -->
   <header id="header" class="header" role="banner">
-    <div class="container mx-auto">
-      <div class="header_content flex justify-between py-4">
+    <div class="container px-8 md:px-0 mx-auto">
+      <div class="header_content flex justify-between items-center py-4">
         <div class="header_order cursor-pointer">
           <div class="underline_03">
             Замовити он-лайн  
           </div>
         </div>
-        <div class="header_menu">
+        <div class="header_menu hidden md:block">
           <?php wp_nav_menu([
             'theme_location' => 'head_menu',
             'container' => 'nav',
@@ -36,7 +36,20 @@
             'menu_class' => 'flex'
           ]); ?>
         </div>
+        <div class="mobile_menu block md:hidden">
+          <span class="mobile_menu_span"></span>
+          <span class="mobile_menu_span"></span>
+          <span class="mobile_menu_span"></span>
+        </div>
       </div>
     </div>
   </header>
+  <div class="mobile_cover block md:hidden bg-white">
+    <?php wp_nav_menu([
+      'theme_location' => 'head_menu',
+      'container' => 'nav',
+      'menu_id' => 'head_menu',
+      'menu_class' => 'flex flex-col py-8 px-4 rotonda_font'
+    ]); ?>
+  </div>
   <section id="content" role="main">

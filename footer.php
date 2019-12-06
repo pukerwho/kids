@@ -14,7 +14,7 @@
                 <?php endforeach; ?> 
                 <?php $emails = carbon_get_theme_option('crb_emails');
                   foreach ($emails as $email): ?>
-                    <div class="text-2xl">
+                    <div class="text-2xl mb-12">
                         <a href="mailto:<?php echo $email['crb_email'] ?>"><?php echo $email['crb_email'] ?></a>
                     </div>
                 <?php endforeach; ?> 
