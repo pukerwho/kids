@@ -50,7 +50,7 @@ Template Name: КОНТАКТЫ
 				<div class="text-xl">
 					<?php $phones = carbon_get_theme_option('crb_phones');
             foreach ($phones as $phone): ?>
-              <a href="tel:<?php echo $phone['crb_phone'] ?>" class="mr-2"><?php echo $phone['crb_phone'] ?></a>;
+              <a href="tel:<?php echo $phone['crb_phone'] ?>" class="mr-2"><?php echo $phone['crb_phone'] ?></a>
           <?php endforeach; ?>
 				</div>
 			</div>
