@@ -30,14 +30,14 @@
 			),
 		));
 		if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
-			<div class="category_post flex items-center mb-8">
-				<div class="w-1/2 mr-0 md:mr-4">
-					<div class="post_thumb bg-white shadow-xl rounded-lg p-4">
+			<div class="category_post flex items-center mb-8 px-6 md:px-0">
+				<div class="w-full md:w-1/2 mr-0 md:mr-4">
+					<div class="post_thumb bg-white shadow-xl rounded-lg p-4 mb-4 md:mb-0">
 						<img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="" class="w-full">	
 					</div>
 				</div>
-				<div class="w-1/2 ml-0 md:ml-4">
-					<div class="post_title text-4xl rotonda_font color-bblack mb-4">
+				<div class="w-full md:w-1/2 ml-0 md:ml-4">
+					<div class="post_title text-4xl rotonda_font text-center md:text-left color-bblack mb-4">
 						<?php the_title(); ?>	
 					</div>
 					<div class="post_content">

@@ -13,8 +13,8 @@ Template Name: КОНТАКТЫ
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="container mx-auto mb-8">
 	<div class="welcome mb-8">
-		<div class="w-2/3 flex items-center flex-col mx-auto">
-			<div class="logo relative mb-4">
+		<div class="w-full md:w-2/3 flex items-center flex-col mx-auto">
+			<div class="logo relative mb-4 py-4 px-8 md:py-0 md:px-0">
 				<img src="<?php bloginfo('template_url') ?>/img/logo.png" alt="">
 				<div class="logo_heart_left">
 					<img src="<?php bloginfo('template_url') ?>/img/heart-logo.png" alt="" width="15px">
@@ -39,7 +39,7 @@ Template Name: КОНТАКТЫ
 		</div>
 	</div>
 	<div class="flex justify-center">
-		<div class="w-1/2">
+		<div class="w-full md:w-1/2 px-6 md:px-0">
 			<div class="text-2xl rotonda_font mb-4">
 				Ми завжди раді вашому дзвінку
 			</div>

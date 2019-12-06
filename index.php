@@ -7,7 +7,7 @@
 <div class="container mx-auto">
 	<div class="welcome mb-8">
 		<div class="w-full md:w-2/3 flex items-center flex-col mx-auto">
-			<div class="logo relative mb-4">
+			<div class="logo relative mb-4 py-4 px-8 md:py-0 md:px-0">
 				<img src="<?php bloginfo('template_url') ?>/img/logo.png" alt="">
 				<div class="logo_heart_left">
 					<img src="<?php bloginfo('template_url') ?>/img/heart-logo.png" alt="" width="15px">
@@ -42,7 +42,7 @@
 			<img src="<?php bloginfo('template_url') ?>/img/animators.png" alt="" class="w-full mx-auto">
 		</div>
 		<div class="w-full md:w-1/2 pl-0 md:pl-10">
-			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
+			<div class="subtitle kids-animate text-4xl text-center md:text-left rotonda_font color-bblack mb-4">
 				Aніматори
 			</div>
 			<div class="text kids-animate text-xl mb-4">
@@ -59,7 +59,7 @@
 	</div>
 	<div class="showprogram flex items-center flex-col-reverse md:flex-row mb-4 px-6 md:px-0">
 		<div class="w-full md:w-1/2">
-			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
+			<div class="subtitle kids-animate text-4xl rotonda_font text-center md:text-left color-bblack mb-4">
 				Шоу-програми
 			</div>
 			<div class="text kids-animate text-xl mb-4">
@@ -82,7 +82,7 @@
 			<img src="<?php bloginfo('template_url') ?>/img/harry-potter.png" alt="" class="w-full mx-auto">
 		</div>
 		<div class="w-full md:w-1/2 pl-0 md:pl-10">
-			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
+			<div class="subtitle kids-animate text-4xl rotonda_font text-center md:text-left color-bblack mb-4">
 				Квести
 			</div>
 			<div class="text kids-animate text-xl mb-4">
@@ -99,7 +99,7 @@
 	</div>
 	<div class="newyear flex items-center flex-col-reverse md:flex-row mb-4 px-6 md:px-0">
 		<div class="w-full md:w-1/2">
-			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
+			<div class="subtitle kids-animate text-4xl rotonda_font text-center md:text-left color-bblack mb-4">
 				Новорічні пропозиції
 			</div>
 			<div class="text kids-animate text-xl mb-4">
@@ -122,7 +122,7 @@
 			<img src="<?php bloginfo('template_url') ?>/img/vipiska.png" alt="" class="w-full mx-auto">
 		</div>
 		<div class="w-full md:w-1/2 pl-0 md:pl-10">
-			<div class="subtitle kids-animate text-4xl rotonda_font color-bblack mb-4">
+			<div class="subtitle kids-animate text-4xl rotonda_font text-center md:text-left color-bblack mb-4">
 				Виписка з пологового будинку
 			</div>
 			<div class="text kids-animate text-xl mb-4">

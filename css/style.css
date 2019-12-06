@@ -42907,6 +42907,7 @@ form p {
   min-height: 100vh;
   position: fixed;
   top: 53px;
+  background-image: url("../img/binding-dark.png");
   -webkit-transform: translateX(-110%);
   -ms-transform: translateX(-110%);
   transform: translateX(-110%);
@@ -43033,6 +43034,20 @@ form p {
   -webkit-flex-direction: row-reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
+  @media (max-width: 768px) {
+    .category_post:nth-child(2n) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+@media (max-width: 768px) {
+  .category_post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
 
 @-webkit-keyframes heart_animation {
   0% {

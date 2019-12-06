@@ -7,8 +7,8 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="container mx-auto mb-8">
 	<div class="welcome mb-8">
-		<div class="w-2/3 flex items-center flex-col mx-auto">
-			<div class="logo relative mb-4">
+		<div class="w-full md:w-2/3 flex items-center flex-col mx-auto">
+			<div class="logo relative mb-4 py-4 px-8 md:py-0 md:px-0">
 				<img src="<?php bloginfo('template_url') ?>/img/logo.png" alt="">
 				<div class="logo_heart_left">
 					<img src="<?php bloginfo('template_url') ?>/img/heart-logo.png" alt="" width="15px">
@@ -25,8 +25,8 @@
 			</div>
 		</div>
 	</div>
-	<div class="flex mb-12">
-		<div class="w-1/2 mr-0 md:mr-4">
+	<div class="flex flex-col md:flex-row mb-12 px-6 md:px-0">
+		<div class="w-full md:w-1/2 mr-0 md:mr-4 mb-4 md:mb-0">
 			<ul id="lightSlider">
 				<?php 
 					$post_photos = carbon_get_the_post_meta('crb_post_photos');
@@ -38,8 +38,8 @@
 				<?php endforeach; ?>
 			</ul>
 		</div>
-		<div class="w-1/2 ml-0 md:ml-4">
-			<h1 class="post_title text-4xl rotonda_font color-bblack mb-4">
+		<div class="w-full md:w-1/2 ml-0 md:ml-4">
+			<h1 class="post_title text-4xl rotonda_font text-center md:text-left color-bblack mb-4">
 				<?php the_title(); ?>		
 			</h1>
 			<div class="post_content mb-4">
