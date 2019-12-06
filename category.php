@@ -9,13 +9,40 @@
 		<?php single_term_title(); ?>
 	</h1>
 	<?php $current_term = get_queried_object_id(); ?>
+	<div class="flex mb-6 px-6 md:px-0">
+		<?php 
+			global $wp_query, $wp_rewrite;  
+			// $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+			$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
+			$custom_query = new WP_Query( array( 
+				'post_type' => 'post', 
+				'paged' => $current,
+				'orderby' => 'date',
+				'order' => 'DESC',
+				'tax_query' => array(
+			    array(
+		        'taxonomy' => 'category',
+				    'terms' => $current_term,
+		        'field' => 'term_id',
+		        'include_children' => true,
+		        'operator' => 'IN'
+			    )
+				),
+			));
+			if ($custom_query->have_posts()) : while ($custom_query->have_posts()) : $custom_query->the_post(); ?>
+				<div class="category_post_list mr-4">
+					<a href="<?php the_permalink(); ?>">
+						<?php the_title(); ?>	
+					</a>
+				</div>
+		<?php endwhile; endif; wp_reset_postdata(); ?>
+	</div>
 	<?php 
 		global $wp_query, $wp_rewrite;  
 		// $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 		$wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
 		$custom_query = new WP_Query( array( 
 			'post_type' => 'post', 
-			'posts_per_page' => 15,
 			'paged' => $current,
 			'orderby' => 'date',
 			'order' => 'DESC',

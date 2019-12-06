@@ -1,7 +1,7 @@
 $(window).scroll(function(){
   console.log('scroll');
   var h_scroll = $(this).scrollTop();
-  if (h_scroll > 110) {
+  if (h_scroll > 56) {
     $('.header').addClass('shadow-lg bg-white')
   } else {
     $('.header').removeClass('shadow-lg bg-white')

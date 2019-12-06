@@ -27,7 +27,7 @@
     </footer>
 
     <div class="modal modal_order">
-    	<div class="modal_content w-1/2 bg-white shadow-lg rounded-lg py-12 px-8">    		
+    	<div class="modal_content w-full md:w-1/2 bg-white shadow-lg rounded-lg py-12 px-8 mx-4 md:mx-0">    		
     		<div class="modal_close">
 	  			<img src="<?php bloginfo('template_url') ?>/img/close.svg" alt="" width="20px">
 	  		</div>
@@ -40,7 +40,7 @@
     	</div>
     </div>
     <div class="modal modal_order_now">
-        <div class="modal_content w-1/2 bg-white shadow-lg rounded-lg py-12 px-8">          
+        <div class="modal_content w-full md:w-1/2 bg-white shadow-lg rounded-lg py-12 px-8 mx-4 md:mx-0">          
             <div class="modal_close">
                 <img src="<?php bloginfo('template_url') ?>/img/close.svg" alt="" width="20px">
             </div>
