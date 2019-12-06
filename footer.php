@@ -27,11 +27,11 @@
     </footer>
 
     <div class="modal modal_order">
-    	<div class="modal_content w-full md:w-1/2 bg-white shadow-lg rounded-lg py-12 px-8 mx-4 md:mx-0">    		
+    	<div class="modal_content w-full md:w-1/2 bg-white shadow-lg rounded-lg py-8 md:py-12 px-8 mx-4 md:mx-0">    		
     		<div class="modal_close">
 	  			<img src="<?php bloginfo('template_url') ?>/img/close.svg" alt="" width="20px">
 	  		</div>
-    		<div class="modal_title rotonda_font text-4xl text-center relative mb-4">
+    		<div class="modal_title rotonda_font text-2xl md:text-4xl text-center relative mb-4">
     			Замовити он-лайн
     		</div>
     		<div class="modal_text relative">
@@ -40,11 +40,11 @@
     	</div>
     </div>
     <div class="modal modal_order_now">
-        <div class="modal_content w-full md:w-1/2 bg-white shadow-lg rounded-lg py-12 px-8 mx-4 md:mx-0">          
+        <div class="modal_content w-full md:w-1/2 bg-white shadow-lg rounded-lg py-8 md:py-12 px-8 mx-4 md:mx-0">          
             <div class="modal_close">
                 <img src="<?php bloginfo('template_url') ?>/img/close.svg" alt="" width="20px">
             </div>
-            <div class="modal_title rotonda_font text-4xl text-center relative mb-4">
+            <div class="modal_title rotonda_font text-2xl md:text-4xl text-center relative mb-4">
                 Замовити свято
             </div>
             <div class="modal_text relative">

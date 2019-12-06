@@ -42603,11 +42603,17 @@ input {
   border-radius: 0.5rem;
   border: 1px solid #cccccc;
   padding: 1rem; }
+  @media (max-width: 768px) {
+    input {
+      padding: 0.5rem; } }
 
 [type="submit"] {
   width: auto;
   color: #ffffff;
   background-color: #58b38b; }
+  @media (max-width: 768px) {
+    [type="submit"] {
+      padding: 1rem; } }
 
 form p {
   margin-bottom: 1rem; }
