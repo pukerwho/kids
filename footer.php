@@ -6,15 +6,18 @@
     			<div class="text-4xl rotonda_font color-bblack">
 	    			Зв'яжіться з нами
 	    		</div>
-	    		<div class="text-2xl">
-	    			<a href="tel:+38 068 744 33 44">+38 068 744 33 44</a>
-	    		</div>
-	    		<div class="text-2xl">
-	    			<a href="mailto:info@luevent.com.ua">info@luevent.com.ua</a>
-	    		</div>
-	    		<div class="text-2xl mb-12">
-	    			<a href="www.luevent.com.ua">www.luevent.com.ua</a>
-	    		</div>
+                <?php $phones = carbon_get_theme_option('crb_phones');
+                  foreach ($phones as $phone): ?>
+                    <div class="text-2xl">
+                        <a href="tel:<?php echo $phone['crb_phone'] ?>"><?php echo $phone['crb_phone'] ?></a>
+                    </div>
+                <?php endforeach; ?> 
+                <?php $emails = carbon_get_theme_option('crb_emails');
+                  foreach ($emails as $email): ?>
+                    <div class="text-2xl">
+                        <a href="mailto:<?php echo $email['crb_email'] ?>"><?php echo $email['crb_phone'] ?></a>
+                    </div>
+                <?php endforeach; ?> 
                 <?php endif; ?>
 	    		<div>
 	    			Розроблено <a href="https://timeto.top/">TimeToTop</a>

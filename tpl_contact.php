@@ -48,7 +48,10 @@ Template Name: КОНТАКТЫ
 					<img src="<?php bloginfo('template_url') ?>/img/phone.svg" alt="" width="45px">
 				</div>
 				<div class="text-xl">
-					<a href="tel:099999">0999909</a>
+					<?php $phones = carbon_get_theme_option('crb_phones');
+            foreach ($phones as $phone): ?>
+              <a href="tel:<?php echo $phone['crb_phone'] ?>" class="mr-2"><?php echo $phone['crb_phone'] ?></a>;
+          <?php endforeach; ?>
 				</div>
 			</div>
 			<div class="flex items-center mb-8">
@@ -56,7 +59,7 @@ Template Name: КОНТАКТЫ
 					<img src="<?php bloginfo('template_url') ?>/img/viber.svg" alt="" width="45px">
 				</div>
 				<div class="text-xl">
-					<a href="tel:099999">0999909</a>
+					<a href="viber://chat?number=<?php echo carbon_get_theme_option( 'crb_viber' ); ?>"><?php echo carbon_get_theme_option( 'crb_viber' ); ?></a>
 				</div>
 			</div>
 			<div class="text-2xl rotonda_font mb-4">
@@ -70,12 +73,12 @@ Template Name: КОНТАКТЫ
 			</div>
 			<div class="flex mb-8">
 				<div class="mr-4">
-					<a href="#">
+					<a href="<?php echo carbon_get_theme_option( 'crb_facebook' ); ?>">
 						<img src="<?php bloginfo('template_url') ?>/img/facebook.svg" alt="" width="45px">
 					</a>
 				</div>
 				<div class="mr-4">
-					<a href="#">
+					<a href="<?php echo carbon_get_theme_option( 'crb_instagram' ); ?>">
 						<img src="<?php bloginfo('template_url') ?>/img/instagram.svg" alt="" width="45px">
 					</a>
 				</div>

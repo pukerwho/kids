@@ -42687,6 +42687,37 @@ form p {
     z-index: -1;
     margin: auto; }
 
+.about_photo-1 {
+  -webkit-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  transform: rotate(4deg); }
+.about_photo-3 {
+  -webkit-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg); }
+
+.pin-1 {
+  top: -25px;
+  left: 40%;
+  -webkit-transform: translateX(-50%) rotate(-4deg);
+  -ms-transform: translateX(-50%) rotate(-4deg);
+  transform: translateX(-50%) rotate(-4deg); }
+
+.pin-2 {
+  left: 0px;
+  top: -15px; }
+
+.pin-2-1 {
+  right: 0;
+  top: -22px; }
+
+.pin-3 {
+  right: 40%;
+  top: -17px;
+  -webkit-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg); }
+
 .modal {
   width: 100%;
   position: fixed;
