@@ -43483,10 +43483,16 @@ form p {
 
 .welcome_content.kids-animate {
   opacity: 0;
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
   transform: translateY(50px); }
 .welcome_content.kids-show {
   opacity: 1;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
   transform: translateY(0px);
+  -webkit-transition: all 0.75s;
+  -o-transition: all 0.75s;
   transition: all 0.75s; }
 
 .titleshow.kids-animate {
@@ -43558,5 +43564,57 @@ form p {
   -webkit-transition: all 0.75s;
   -o-transition: all 0.75s;
   transition: all 0.75s; }
+
+.newyear_ball {
+  position: absolute;
+  top: 40%;
+  right: 15%;
+  opacity: 0.85; }
+  .newyear_ball.kids-show {
+    -webkit-animation: ball_down 3s forwards;
+    animation: ball_down 3s forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.6, 0.1, 0.6, 0.95);
+    animation-timing-function: cubic-bezier(0.6, 0.1, 0.6, 0.95); }
+
+@-webkit-keyframes ball_down {
+  0% {
+    top: 40%;
+    right: 15%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  42% {
+    top: 90%; }
+  44% {
+    top: 89%; }
+  46% {
+    top: 90%;
+    right: 15%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    top: 90%;
+    right: 35%;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg); } }
+@keyframes ball_down {
+  0% {
+    top: 40%;
+    right: 15%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  42% {
+    top: 90%; }
+  46% {
+    top: 89%; }
+  50% {
+    top: 90%;
+    right: 15%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    top: 90%;
+    right: 25%;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg); } }
 
 /*# sourceMappingURL=style.css.map */

@@ -113,8 +113,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="w-full md:w-1/2 pl-0 md:pl-10">
+		<div class="w-full md:w-1/2 relative pl-0 md:pl-10">
 			<img src="<?php bloginfo('template_url') ?>/img/newyear.png" alt="" class="w-full mx-auto">
+			<img src="<?php bloginfo('template_url') ?>/img/ball.svg" alt="" width="30px" class="newyear_ball kids-animate">
 		</div>
 	</div>
 	<div class="vipiska flex items-center flex-col md:flex-row mb-4 px-6 md:px-0">
